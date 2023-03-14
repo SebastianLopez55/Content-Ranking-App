@@ -18,9 +18,11 @@
   <!-- main webpage content -->
   <body>
     <header class="header">
-      <h1>Today I Learned</h1>
+      <div class="logo">
+        <img src="logo.png" height="68" width="68" />
+        <h1>Today I Learned</h1>
+      </div>
       <button>Share a fact</button>
-      <img src="logo.png" height="68" width="68" />
     </header>
 
     <form class="fact-form">
@@ -64,9 +66,12 @@
                 alt="Today I Learned Logo"
                 >(Source)
               </a>
-              <spa class="tag"> #Technology# </spa>
             </p>
-            <div>
+            <spa class="tag" style="background-color: #3b82f6"
+              >#Technology#
+            </spa>
+
+            <div class="vote-buttons">
               <button>👍 <strong>24</strong></button>
               <button>🤯 <strong>9</strong></button>
               <button>⛔️ <strong>4</strong></button>
@@ -83,9 +88,11 @@
                 target="_blank"
                 >(Source)</a
               >
-              <span class="tag"> #Society# </span>
             </p>
-            <div>
+            <span class="tag" style="background-color: #eab308">
+              #Society#
+            </span>
+            <div class="vote-buttons">
               <button>👍 <strong>11</strong></button>
               <button>🤯 <strong>8</strong></button>
               <button>⛔️ <strong>2</strong></button>

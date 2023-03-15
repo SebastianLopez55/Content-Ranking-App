@@ -56,8 +56,10 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [currentCategory, setCurrentCategory] = useState("all");
 
+  // useEffect is used to fetch data from the server
   useEffect(
     function () {
+      // get the data 'facts' from the server
       async function getFacts() {
         setIsLoading(true);
 
@@ -99,6 +101,7 @@ function App() {
   );
 }
 
+// Shows the user a loading message while the data is being fetched
 function Loader() {
   return <p className="message">Loading...</p>;
 }

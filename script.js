@@ -1,5 +1,8 @@
 console.log("Hello World!");
 
+// ==== DOM Manipulation ====
+// We can use properties from JS DOM object to select HTML elements and manipulate it.
+
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
 
@@ -24,4 +27,23 @@ btn.addEventListener("click", function () {
 // Function call: add(1, 2);
 
 // == Arrays In JS ==
-// const numbers = [1, true, 3, "Hi", 5];
+// const numbers = [1, 2, 3, "Hi", true];
+// const [first, second, third, string, boolean] = numbers;
+// consol.log(first) will give 1
+// Unpacking arrays: const [first, second, ...rest] = numbers;
+
+// == Looping over arrays ==
+// cost arr = [1, 2, 3, 4, 5];
+// arr.forEach( function (element) { console.log(element) } );
+// USING THE MAP METHODS
+// const newArr = arr.map( (element) => element * 2 ); // [2, 4, 6, 8, 10]
+
+// == Objects In JS ==
+// const objectTest = {
+//   name: "John",
+//   age: 30,
+//   returnAge: function () {
+//     return this.age;
+//   },
+// };
+// console.log(objectTest.returnAge()); // 30

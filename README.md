@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# Fullstack Application: Content Ranking 
+
+Project URL: https://content-rating-facts.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Project URL: https://content-rating-facts.netlify.app/
+Steps toGetting Started with Create React App
 
 ## Available Scripts
 

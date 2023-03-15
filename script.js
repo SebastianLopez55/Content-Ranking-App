@@ -12,3 +12,16 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share a fact";
   }
 });
+
+// ==== JS Basics ====
+
+// == Ternary operator: helpful because it produces a value ==
+// const result =
+//   condition1 > condition2 ? "return value if true" : "return value if false";
+
+// == Arrow Functions ==
+// const add = (a, b) => a + b;
+// Function call: add(1, 2);
+
+// == Arrays In JS ==
+// const numbers = [1, true, 3, "Hi", 5];

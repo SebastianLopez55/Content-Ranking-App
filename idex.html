@@ -23,7 +23,7 @@
           <img src="logo.png" />
           <h1>Today I Learned</h1>
         </div>
-        <button>Share a fact</button>
+        <button class="btn btn-large">Share a fact</button>
       </header>
 
       <form class="fact-form">
@@ -36,22 +36,30 @@
           <option value="Science">Society</option>
           <option value="Finance">Finance</option>
         </select>
-        <button>Post</button>
+        <button class="btn btn-large">Post</button>
       </form>
 
       <main class="main">
-        <!-- Unordered List -->
-
         <aside>
           <ul>
-            <li>
-              <button>All</button>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
             </li>
             <li>
-              <button>Technology</button>
+              <button
+                class="btn btn-categories"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
             </li>
-            <li>
-              <button>Society</button>
+            <li class="category">
+              <button
+                class="btn btn-categories"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
             </li>
           </ul>
         </aside>
@@ -65,13 +73,12 @@
                   class="source"
                   href="https://opensource.fb.com/"
                   target="_blank"
-                  alt="Today I Learned Logo"
                   >(Source)
                 </a>
               </p>
-              <spa class="tag" style="background-color: #3b82f6"
+              <span class="tag" style="background-color: #3b82f6"
                 >#Technology#
-              </spa>
+              </span>
 
               <div class="vote-buttons">
                 <button>👍 <strong>24</strong></button>

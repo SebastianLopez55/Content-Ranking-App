@@ -55,6 +55,10 @@ h1 {
   margin-top: 6px;
 }
 
+.category {
+  margin-bottom: 16px;
+}
+
 .fact {
   font-size: 20px;
   line-height: 1.4;
@@ -96,4 +100,34 @@ ul {
 .source:hover,
 .source:active {
   color: #3b82f6;
+}
+
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #6ebfe7);
+  color: inherit;
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn-all-categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
 }

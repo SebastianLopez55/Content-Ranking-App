@@ -7,16 +7,30 @@
 body {
   background-color: #292524;
   color: #fafaf9;
-  font-family: "Sono", sans-serif;
-  padding: 48px 64px;
+  font-family: 'Sono', sans-serif;
+  padding: 48px 64px 0px;
 }
 
 .hidden {
   display: none !important;
 }
 
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
 /* MAIN LAYOUT */
-.container {
+#root {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -32,12 +46,21 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+
+  height: calc(100vh - 48px - 68px - 40px);
 }
 
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
+    /* Fixed in a video text overlay, to fix scrolling issue on small screens */
+    height: auto;
   }
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
 }
 
 /* ELEMENTS */
@@ -56,7 +79,7 @@ body {
 h1 {
   font-size: 42px;
   text-transform: uppercase;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   line-height: 1;
   margin-top: 6px;
 }
@@ -90,7 +113,7 @@ h1 {
 .tag {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
@@ -122,6 +145,10 @@ h1 {
   background-color: #292524;
 }
 
+.vote-buttons button:disabled {
+  background-color: #44403c;
+}
+
 ul {
   list-style: none;
 }
@@ -141,12 +168,12 @@ ul {
 
 .btn {
   border: none;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   line-height: 1;
   text-transform: uppercase;
   font-size: 17px;
   padding: 16px 0 13px;
-  background-image: linear-gradient(135deg, #383c42, #5b5954);
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
   color: inherit;
   border-radius: 100px;
   cursor: pointer;
@@ -211,7 +238,7 @@ ul {
 
 @media (max-width: 1000px) {
   body {
-    padding: 32px 48px;
+    /* padding: 32px 48px; */
   }
 
   .fact-form {

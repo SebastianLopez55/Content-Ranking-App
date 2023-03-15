@@ -1,9 +1,9 @@
 {
-  "name": "content-ranking-app",
+  "name": "today-i-learned",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@supabase/supabase-js": "^2.10.0",
+    "@supabase/supabase-js": "^2.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

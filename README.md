@@ -51,4 +51,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Check the link: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Sources: This application was developed as part of the Udemy Full Stack Web Development Course.
+#
+
+Other tools:
+  - https://app.netlify.com/teams/sebastianlopez55/overview
+  - https://supabase.com/dashboard/project/xchxnhmbdwdtqullamia/editor/29089
+
+Sources: 
+  - This application was developed as part of the Udemy Full Stack Web Development Course.
